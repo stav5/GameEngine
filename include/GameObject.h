@@ -5,7 +5,7 @@
 class GameObject
 {
 private:
-	
+	//comment	
 
 public:
 	
