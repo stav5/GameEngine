@@ -22,8 +22,11 @@ public:
 		if(pTail != NULL)
 		{
 			while(pTail->GetPrev())
+			{
 				Pop();
-
+				printf("test");
+			}
+			
 			Pop();
 		}
 	}
@@ -61,7 +64,7 @@ public:
 		
 		pTail = pTail->GetPrev();
 		delete pTail->GetNext();
-		pTail->SetNext(NULL);
+		//pTail->SetNext(NULL);
 	}
 
 	void Insert(int index);

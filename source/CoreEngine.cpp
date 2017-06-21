@@ -15,7 +15,7 @@ void CoreEngine::runTests()
 
 void CoreEngine::RegisterGameObject(GameObject* pGameObject)
 {
-	gameObjects.Add(pGameObject);
+	//gameObjects.Add(pGameObject);
 }
 
 void CoreEngine::DeRegisterGameObject(GameObject* pGameObject)
