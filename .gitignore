@@ -1,4 +1,4 @@
 
 *.swp
 build/*
-!build/README.txt
+!build/.gitkeep
