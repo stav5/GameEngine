@@ -1,7 +1,6 @@
 #pragma once
-#include <SFML/System.hpp>
 
-class Timer
+class __declspec(dllexport) Timer
 {
 private:
 
