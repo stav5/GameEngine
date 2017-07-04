@@ -5,7 +5,7 @@
 #include <Timer.h>
 #include <LinkedList.h>
 
-class __declspec(dllexport) CoreEngine
+class CoreEngine
 {
 private:
 	LinkedList<GameObject> gameObjects;	

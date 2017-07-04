@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.9)
+cmake_minimum_required(VERSION 2.7)
 set(CMAKE_LEGACY_CYGWIN_WIN32 1)
 
 PROJECT( GameEngine )

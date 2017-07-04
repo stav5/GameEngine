@@ -1,6 +1,6 @@
 #pragma once
 
-class __declspec(dllexport) Timer
+class Timer
 {
 private:
 
