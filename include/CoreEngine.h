@@ -1,25 +1,26 @@
 #pragma once
 
 #include <stdio.h>
-#include <GameObject.h>
-#include <Timer.h>
-#include <LinkedList.h>
+#include <vector>
 
-class CoreEngine
+#include <Macros.h>
+#include <GameObject.h>
+
+#define pGameObject GameObject*
+
+
+class dllspec CoreEngine
 {
 private:
-	LinkedList<GameObject> gameObjects;	
-	
-	bool addGameObjectToList(GameObject* pObj);
-	bool removeGameObjectFromList(GameObject* pObj);
+	std::vector<pGameObject> m_gameObjects;
 	
 public:
 	CoreEngine();
-	bool Init();	
+	bool Init();
 	void runTests();
 			
-	void RegisterGameObject(GameObject* pGameObject);
-	void DeRegisterGameObject(GameObject* pGameObject);
+	pGameObject RegisterGameObject();
+	bool DeRegisterGameObject(pGameObject pointer);
 	
 
 };

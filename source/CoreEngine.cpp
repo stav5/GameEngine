@@ -1,6 +1,5 @@
 #include <CoreEngine.h>
 
-#include <iostream>
 
 CoreEngine::CoreEngine()
 {
@@ -8,18 +7,32 @@ CoreEngine::CoreEngine()
 
 }
 
+bool CoreEngine::Init()
+{
+	return false;
+}
+
 void CoreEngine::runTests()
 {
 	
 }
 
-void CoreEngine::RegisterGameObject(GameObject* pGameObject)
+pGameObject CoreEngine::RegisterGameObject()
 {
-	//gameObjects.Add(pGameObject);
+	m_gameObjects.push_back( (pGameObject)(new GameObject()) );
+	return m_gameObjects.back();
 }
 
-void CoreEngine::DeRegisterGameObject(GameObject* pGameObject)
+bool CoreEngine::DeRegisterGameObject(pGameObject pointer)
 {
-	//removeGameObjectFromList(pGameObject);
-	//delete pGameObject;
+	try 
+	{
+		DEBUG_LOG("deleting a gameobject, test");
+	}
+	catch (...)
+	{
+		return false;
+	}
+
+	return true;
 }

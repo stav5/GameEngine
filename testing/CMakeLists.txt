@@ -1,6 +1,8 @@
-project(Testing)
+project(LibraryTester)
 
 file(GLOB src "*.h" "*.cpp")
 
-ADD_EXECUTABLE( ${PROJECT_NAME} ${src})
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
+add_executable( ${PROJECT_NAME} ${src})
 target_link_libraries(${PROJECT_NAME} GameEngineLib)

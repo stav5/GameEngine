@@ -2,14 +2,21 @@
 
 #include <stdio.h>
 
-class GameObject
+class dllspec GameObject
 {
 private:
 	//comment	
 
 public:
-	
-	virtual void Update() = 0;	
-	virtual void Draw() = 0;	
+	GameObject()
+	{
+
+	}
+	~GameObject()
+	{
+
+	}
+
+
 
 };
